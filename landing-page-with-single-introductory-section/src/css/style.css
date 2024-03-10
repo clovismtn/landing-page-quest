@@ -1,0 +1,156 @@
+body{
+    background-image: url("../images/bg-desktop.svg");
+    background-color: hsl(257, 40%, 49%);
+    color: white;
+}
+
+.container{
+    display: flex;
+    flex-direction: column
+}
+
+.header{
+    margin: 80px 90px;
+}
+
+.content{
+    display: flex;
+    gap: 100px;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: flex-start;
+    width: auto;
+}
+
+.content img{
+    width: 800px;
+}
+
+.content .text{
+    display: flex;
+    flex-direction: column;
+    max-width: 650px;
+    margin-top: 50px;
+    font-family: 'Open Sans';
+    font-size: 25px;
+    gap: 50px;
+}
+
+.content .text h3{
+    font-size: 50px;
+    max-width: 600px;
+    font-family: 'Poppins';
+    font-weight: 600;
+}
+
+.content .text a{
+    color: hsl(257, 40%, 49%);
+    background-color: white;
+    border-radius: 50px;
+    padding: 20px 80px;
+    width: 100px;
+}
+
+.content .text a:hover{
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+    transition: 0.5s;
+}
+
+.footer {
+    display: flex;
+    gap: 15px;
+    justify-content: flex-end;
+    margin-right: 250px;
+}
+
+.footer a{
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.footer a.facebook{
+    padding: 10px 15px;
+}
+
+.footer a.twitter{
+    padding: 10px 10px;
+}
+
+.footer a.instagram{
+    padding: 10px 12px;
+}
+
+.footer a:hover{
+    color: hsl(300, 69%, 71%);
+    border-color: hsl(300, 69%, 71%);
+    transition: 0.2s;
+}
+
+@media(max-width:800px){
+
+    .container{
+        max-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .header{
+        margin-left: 10%;
+        margin-top: 10%;
+        margin-bottom: 0;
+        max-width: 100%;
+    }
+    .header img{
+        width: 50%;
+    }
+
+    .content{
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        padding: 0;
+        width: 100%;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .content .text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .content img{
+        width: 80%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .content .text h3{
+        font-size: 25px;
+        max-width: 85%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .content .text p{
+        max-width: 85%;
+        font-size: 18px;
+        padding: 0;
+    }
+
+    .content .text a{
+        padding: 15px 60px;
+        align-self: center;
+    }
+
+    .footer{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+        margin-top: 50px;
+        justify-content: center;
+    }
+}
